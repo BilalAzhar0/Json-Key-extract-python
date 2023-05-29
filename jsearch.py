@@ -2,7 +2,7 @@ import json
 
 config = "config.json"
 
-def load_config_param(file_name,key_string):
+def getkey(file_name,key_string):
     with open(file_name,"r")as file:
         data = json.load(file)
         keys = key_string.split('.')
